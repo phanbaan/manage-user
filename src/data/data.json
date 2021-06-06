@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "phan ba an",
+    "phone": 8847474747,
+    "permission": 1
+  },
+  {
+    "id": 2,
+    "name": "hoang lien ",
+    "phone": 8847474747,
+    "permission": 3
+  },
+  {
+    "id": 3,
+    "name": "duy manh",
+    "phone": 8847474747,
+    "permission": 3
+  },
+  {
+    "id": 4,
+    "name": "trong hoang",
+    "phone": 8847474747,
+    "permission": 3
+  },
+  {
+    "id": 5,
+    "name": "luu chi dung",
+    "phone": 88432747,
+    "permission": 3
+  },
+  {
+    "id": 6,
+    "name": "le van than",
+    "phone": 847474747,
+    "permission": 1
+  },
+  {
+    "id": 7,
+    "name": "hoang son",
+    "phone": 8847474747,
+    "permission": 2
+  },
+  {
+    "id": 8,
+    "name": "tran dinh trong",
+    "phone": "0847474747",
+    "permission": 1
+  },
+  {
+    "id": 9,
+    "name": "Nguyen minh son",
+    "phone": 2147474747,
+    "permission": 3
+  },
+  {
+    "id": 10,
+    "name": "nguyen hoai linh",
+    "phone": 124344747,
+    "permission": 1
+  }
+]
