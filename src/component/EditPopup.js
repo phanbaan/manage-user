@@ -15,16 +15,18 @@ export default class EditPopup extends Component {
     const name = event.target.name;
     const value = event.target.value;
     this.setState({
-      [name]: [value],
+      [name]: value,
     });
   };
   onClickButton = () => {
     this.props.isChangePopup();
+
     let userEdit = {};
     userEdit.id = this.state.id;
     userEdit.name = this.state.name;
     userEdit.phone = this.state.phone;
     userEdit.permission = this.state.permission;
+
     this.props.getValueEdit(userEdit);
   };
   render() {

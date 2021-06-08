@@ -13,11 +13,21 @@ class App extends Component {
     super(props);
     this.state = {
       status: false,
-      data: Data,
+      data: [],
       valueSearch: "",
       isPopup: false,
       userEdit: {},
     };
+  }
+  componentDidMount() {
+    if (localStorage.getItem("data") === null) {
+      localStorage.setItem("data", JSON.stringify(Data));
+    } else {
+      var dataNew = JSON.parse(localStorage.getItem("data"));
+      this.setState({
+        data: dataNew,
+      });
+    }
   }
 
   isChangePopup = () => {
@@ -42,6 +52,7 @@ class App extends Component {
     this.setState({
       data: items,
     });
+    localStorage.setItem("data", JSON.stringify(items));
   };
   getSearch = (value) => {
     this.setState({
@@ -61,6 +72,7 @@ class App extends Component {
         item.permission = value.permission;
       }
     });
+    localStorage.setItem("data", JSON.stringify(this.state.data));
   };
   getUserDelete = (value) => {
     let dataTemp = this.state.data.filter((item) => item.id !== value);
